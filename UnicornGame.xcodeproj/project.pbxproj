@@ -15,6 +15,10 @@
 		57C3D29C27556366003A3E91 /* UnicornGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3D29B27556366003A3E91 /* UnicornGameTests.swift */; };
 		57C3D2A627556366003A3E91 /* UnicornGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3D2A527556366003A3E91 /* UnicornGameUITests.swift */; };
 		57C3D2A827556366003A3E91 /* UnicornGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3D2A727556366003A3E91 /* UnicornGameUITestsLaunchTests.swift */; };
+		57C3D2B727556852003A3E91 /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 57C3D2B527556852003A3E91 /* toy_robot_vintage.usdz */; };
+		57C3D2B827556852003A3E91 /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 57C3D2B627556852003A3E91 /* toy_drummer.usdz */; };
+		57C3D2BA27560D91003A3E91 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3D2B927560D91003A3E91 /* Model.swift */; };
+		57C3D2BD2756139C003A3E91 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 57C3D2BC2756139C003A3E91 /* FocusEntity */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,9 @@
 		57C3D2A127556366003A3E91 /* UnicornGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnicornGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C3D2A527556366003A3E91 /* UnicornGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicornGameUITests.swift; sourceTree = "<group>"; };
 		57C3D2A727556366003A3E91 /* UnicornGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicornGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		57C3D2B527556852003A3E91 /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = toy_robot_vintage.usdz; path = ../../../../../Downloads/toy_robot_vintage.usdz; sourceTree = "<group>"; };
+		57C3D2B627556852003A3E91 /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = toy_drummer.usdz; path = ../../../../../Downloads/toy_drummer.usdz; sourceTree = "<group>"; };
+		57C3D2B927560D91003A3E91 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57C3D2BD2756139C003A3E91 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +106,8 @@
 			children = (
 				57C3D28827556365003A3E91 /* AppDelegate.swift */,
 				57C3D28A27556365003A3E91 /* ContentView.swift */,
+				57C3D2B927560D91003A3E91 /* Model.swift */,
+				57C3D2B4275566BB003A3E91 /* Models */,
 				57C3D28C27556365003A3E91 /* Experience.rcproject */,
 				57C3D28E27556365003A3E91 /* Assets.xcassets */,
 				57C3D29027556365003A3E91 /* Preview Content */,
@@ -130,6 +140,15 @@
 			path = UnicornGameUITests;
 			sourceTree = "<group>";
 		};
+		57C3D2B4275566BB003A3E91 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57C3D2B627556852003A3E91 /* toy_drummer.usdz */,
+				57C3D2B527556852003A3E91 /* toy_robot_vintage.usdz */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +165,9 @@
 			dependencies = (
 			);
 			name = UnicornGame;
+			packageProductDependencies = (
+				57C3D2BC2756139C003A3E91 /* FocusEntity */,
+			);
 			productName = UnicornGame;
 			productReference = 57C3D28527556365003A3E91 /* UnicornGame.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +240,9 @@
 				Base,
 			);
 			mainGroup = 57C3D27C27556365003A3E91;
+			packageReferences = (
+				57C3D2BB2756139C003A3E91 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = 57C3D28627556365003A3E91 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,6 +261,8 @@
 			files = (
 				57C3D29227556365003A3E91 /* Preview Assets.xcassets in Resources */,
 				57C3D28F27556365003A3E91 /* Assets.xcassets in Resources */,
+				57C3D2B727556852003A3E91 /* toy_robot_vintage.usdz in Resources */,
+				57C3D2B827556852003A3E91 /* toy_drummer.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +290,7 @@
 				57C3D28B27556365003A3E91 /* ContentView.swift in Sources */,
 				57C3D28927556365003A3E91 /* AppDelegate.swift in Sources */,
 				57C3D28D27556365003A3E91 /* Experience.rcproject in Sources */,
+				57C3D2BA27560D91003A3E91 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +641,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57C3D2BB2756139C003A3E91 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57C3D2BC2756139C003A3E91 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57C3D2BB2756139C003A3E91 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 57C3D27D27556365003A3E91 /* Project object */;
 }

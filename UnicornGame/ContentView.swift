@@ -94,7 +94,7 @@ class CustomARView: ARView {
     required init(frame frameRect: CGRect) {
         super.init(frame: frameRect)
         
-        self.focusSquare = FocusEntity(on: self, focus: .plane)
+        self.focusSquare = FocusEntity(on: self, focus: .classic)
         
         self.focusSquare?.delegate = self
         self.focusSquare?.setAutoUpdate(to: true)
